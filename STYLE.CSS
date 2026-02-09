@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #1c1c1c;
+  flex-direction: column;
+}
+
+nav.menu.show {
+  display: flex;
+}
+
+nav.menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #333;
+  display: block;
+}
+
+nav.menu a:hover {
+  background: #5f0c0c;
+}
+
+.submenu-links {
+  display: none;
+  flex-direction: column;
+  background: #111;
+}
+
+.submenu-links.show {
+  display: flex;
+}
+
+.submenu-links a {
+  padding-left: 30px;
+  font-size: 0.95rem;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.btn-ig {
+  background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  margin-left: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: .9rem;
+  color: #94a3b8;
+}
+ /*a partir de aca va la imagen*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0, 8);
+}
+
+.logo bytech-logo.jpeg{ 
+    height: 100px; /*ajuste de tamaño de la imagen*/
+    width: auto;
+}

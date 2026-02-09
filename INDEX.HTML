@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bytech | Servicio Técnico y Web</title>
+
+  <!-- CSS anclado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--/*<header>
+  <div class="logo">Bytech</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>*/-->
+
+ <header class="header">
+  <div class="logo">
+    <img src="img/bytech-logo.jpeg" alt="Bytech Servico Tecnico">
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+</header>
+
+  <nav id="menu" class="menu">
+    <a href="#" onclick="mostrar('inicio')">Inicio</a>
+    <a href="#" onclick="mostrar('sobre')">Sobre Bytech</a>
+
+    <a href="#" id="webToggle" onclick="toggleSubmenu('webSubmenu','webToggle')">
+      Páginas Web ▾
+    </a>
+    <div id="webSubmenu" class="submenu-links">
+      <a href="#" onclick="mostrar('landing')">Landing pages</a>
+      <a href="#" onclick="mostrar('emprendimientos')">Web para emprendimientos</a>
+      <a href="#" onclick="mostrar('mantenimiento')">Mantenimiento web</a>
+    </div>
+
+    <a href="#" id="servicioToggle" onclick="toggleSubmenu('servicioSubmenu','servicioToggle')">
+      Servicio Técnico ▾
+    </a>
+    <div id="servicioSubmenu" class="submenu-links">
+      <a href="#" onclick="mostrar('reparacion')">Reparación de PC / notebooks</a>
+      <a href="#" onclick="mostrar('limpieza')">Limpieza y optimización</a>
+      <a href="#" onclick="mostrar('software')">Instalación de software</a>
+    </div>
+
+    <a href="#" onclick="mostrar('contacto')">Contactanos</a>
+  </nav>
+</header>
+
+<section id="inicio">
+  <h1>Bytech</h1>
+  <p>Servicio técnico en PC y notebooks · Páginas web</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Servicio técnico</h3>
+      <p>Reparación de PC y notebooks, optimización del sistema y solución de problemas de software.</p>
+    </div>
+
+    <div class="card">
+      <h3>Páginas web</h3>
+      <p>Landing pages simples para emprendedores que necesitan presencia online y ventas.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="contactar()">Contactar por WhatsApp</button>
+  </div>
+</section>
+
+<section id="sobre" class="hidden">
+  <h2>Sobre Bytech</h2>
+  <p>Soluciones tecnológicas accesibles para personas y emprendedores.</p>
+</section>
+
+<section id="landing" class="hidden"><h2>Landing Pages</h2></section>
+<section id="emprendimientos" class="hidden"><h2>Web para Emprendimientos</h2></section>
+<section id="mantenimiento" class="hidden"><h2>Mantenimiento Web</h2></section>
+
+<section id="reparacion" class="hidden"><h2>Reparación PC / Notebooks</h2></section>
+<section id="limpieza" class="hidden"><h2>Limpieza y Optimización</h2></section>
+<section id="software" class="hidden"><h2>Instalación de Software</h2></section>
+
+<section id="contacto" class="hidden">
+  <h2>Contacto</h2>
+  <button onclick="contactar()">WhatsApp</button>
+  <button class="btn-ig" onclick="instagram()">Instagram</button>
+</section>
+
+<footer>© <span id="year"></span> Bytech</footer>
+
+<!-- JS anclado -->
+<script src="script.js"></script>
+</body>
+</html>
